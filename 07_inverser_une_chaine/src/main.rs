@@ -26,8 +26,20 @@ println!("{}",text);
     let input = &args[1];
     let reversed: String = input.chars().rev().collect();
     println!("Chaîne inversée : {}", reversed);
+    
+ // OU ...
+
+    let f = maReverse(&reversed);
+    println!("Reinversion:{}",f);
+   
     println!("{}","------------------------------:".red());
+}
 
-    // OU
 
+fn maReverse(chaine: &str) -> String {
+    let mut rev:String = String::new();
+    for ch in chaine.chars().rev(){ // chaine.chars().rev() crée un itérateur qui parcourt les caractères de la chaîne chaine en sens inverse.
+        rev.push(ch) // rempli la chaine. one by one.
+    }
+    rev
 }

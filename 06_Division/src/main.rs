@@ -6,7 +6,7 @@ fn main() {
     println!("██║╚██╗██║██║   ██║    ██║██╔══██║");
     println!("██║ ╚████║╚██████╔╝    ██║██║  ██║");
     println!("╚═╝  ╚═══╝ ╚═════╝     ╚═╝╚═╝  ╚═╝");
-    println!("---( STARTED )---");
+
     let arguments: Vec<String> = env::args().collect();
     if arguments.len() < 3 {
         println!("Veuillez taper deux entiers comme arguments.");
@@ -29,5 +29,5 @@ fn main() {
     };
     println!("La division est : {}", i / j);
     println!("Le modulo est : {}", i % j);
-    println!("---( THE END )---");
+    println!("---");
 }

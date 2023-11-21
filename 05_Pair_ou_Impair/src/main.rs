@@ -1,11 +1,11 @@
 use std::env;
 
 fn main() {
-    println!("---( STARTED )---");
+    println!("---[");
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
         println!("Veuillez fournir un entier comme argument.");
-        panic!(); // Désagreable !
+        //panic!(); // Désagreable !
         return;
     }
     match args[1].parse::<i32>() {
@@ -20,5 +20,5 @@ fn main() {
             println!("Veuillez fournir un entier valide.");
         }
     }
-    println!("---( TERMINATED )---");
+    println!("]---");
 }
